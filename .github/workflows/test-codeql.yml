@@ -12,7 +12,7 @@ permissions:
 jobs:
   test-codeql:
     name: Test CodeQL Workflow
-    uses: circles-zone/github-workflows/.github/workflows/codeql/codeql-analysis.yml@BU-2737-Implement-CodeQL-Farah-Mae-Sumajit
+    uses: circles-zone/github-workflows/.github/workflows/codeql-analysis.yml@BU-2737-Implement-CodeQL-Farah-Mae-Sumajit
     permissions:
       actions: read
       contents: read

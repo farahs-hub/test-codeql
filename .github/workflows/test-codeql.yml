@@ -1,0 +1,19 @@
+name: Test CodeQL Security Analysis
+
+on:
+  push:
+  workflow_dispatch:
+
+permissions:
+  actions: read
+  contents: read
+  security-events: write
+
+jobs:
+  test-codeql:
+    name: Test CodeQL Workflow
+    uses: circles-zone/github-workflows/.github/workflows/codeql/codeql-analysis.yml@BU-2737-Implement-CodeQL-Farah-Mae-Sumajit
+    permissions:
+      actions: read
+      contents: read
+      security-events: write
